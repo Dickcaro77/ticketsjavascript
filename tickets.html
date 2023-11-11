@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>TP Integrador #1</title>
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-sm navbar-dark bg-info" data-bs-theme="navbar-expand-sm">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="codo a codo.jpeg" alt="" width="150">
+            </a>
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">G5T 
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">The Conference</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">The Speakers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">The Place And Date</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Buy Tickets</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sing In</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    <main>
+        <!-- Cards -->
+        <div class="container" style="padding-top: 8rem;">
+
+            <div class="row justify-content-md-center g-1">
+                <div class="col-3" style="width: 13rem;">
+                    <div class="card border border-primary p-1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Estudiante</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <p class="card-text fw-bold">80%</p>
+                            <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8rem;">* presentar
+                                documentación</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" style="width: 13rem;">
+                    <div class="card border border-success p-1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Trainee</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <p class="card-text fw-bold">50%</p>
+                            <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8rem;">* presentar
+                                documentación</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" style="width: 13rem;">
+                    <div class="card border border-warning p-1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Junior</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <p class="card-text fw-bold">15%</p>
+                            <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8rem;">* presentar
+                                documentación</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="container w-50 pt-2">
+            <!-- Texto superior del formulario -->
+            <div class="text-center">
+                <p class="m-0"><sup>VENTA</sup>
+                <h2>VALOR DE TICKET $200</h2>
+                </p>
+            </div>
+            <!-- Formulario -->
+            <form class="row g-1 gx-2 formulario" id="formulario">
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input type="text" class="form-control" id="cantidad" placeholder="Cantidad">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="cantidad" class="form-label">Categoría</label>
+                    <select id="categoria" class="form-select" required>
+                        <option value="">Sin categoria</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <p class="alert alert-primary" id="totalAPagar">Total a Pagar: $</p>
+                </div>
+
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn text-white fs-6 btnBorrar" style="background-color: #96c93e;"
+                        type=" button" id="borrar">Borrar</button>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn text-white fs-6 btnResumen" style="background-color: #96c93e;"
+                        type=" button" id="resumen">Resumen</button>
+                </div>
+                 <div id="separator-ribbon">
+              <div class="content bg-dark"></div>
+           </div>
+            </form>
+            
+        </div>
+
+       
+    </main>
+
+     <div id="footer" class="p-5" style="background-color: rgb(134, 196, 211);">
+        <div class="container w-50 pt-5">
+        <div class="row row-cols-md-2 justify-content-md-center">
+          <div class="col text-center">
+            <a href="#">
+              <button class="btn btn-lg rounded-pill btn-outline-secondary w-100 p-3 shadow-sm font-weight-bold">Customer Support</button>
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-md-center py-5">
+           <div class="col text-center font-weight-light">
+                <p>The contents of buenosaires.gob.ar are licensed under a Creative Commons Attribution 2.5 Argentina License.</p>
+                <p>© 2023 VAMOS BUENOS AIRES</p>
+           </div>
+        </div>
+        </div>
+        </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script> -->
+   <script src="script.js"></script>
+</body>
+
+</html>
